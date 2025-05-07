@@ -4,7 +4,7 @@
 
 ### Selección del protocolo adecuado
 
-| Protocolo  | Uso                                                    |   Formato    |
+| Protocolo  | Uso                                                    |   Formato    | R      |
 | ---------- | ------------------------------------------------------ | :----------: | ------ |
 | REST       | Ideal para web APIs, ampliamente adoptado (estandar)   |     JSON     | link   |
 | gRPC       | Óptimo para comunicación entre microservicios          |   PROTOBUF   | Roman  |
