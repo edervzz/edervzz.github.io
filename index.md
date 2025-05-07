@@ -24,7 +24,7 @@ Se describe a nivel general cuales son las capacidades habilitadas dentro de eco
 - Compatibilidad de esquemas: logs, payloads, errores, catálogos
 - Conversión y normalización: agregación, transformación
 
-## 4. Monitoreo y Observabilidad
+## 4. Monitoreo y Observabilidad [#](/monitoreo-observabilidad.md)
 
 - Logs y trazabilidad: eventos críticos
 - Alertas y métricas: detección de anomalías
