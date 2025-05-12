@@ -6,6 +6,10 @@ Implementación de RBAC o ABAC para control granular.
 
 ## Autenticación
 
+Proceso de **verificar la identidad** de un usuario o servicio antes de permitirle acceso.
+
+_Se asegurda de que la persona o sistema que intenta ingresar es quien dice ser._
+
 | Método    | Uso                                                                                                                 |
 | --------- | ------------------------------------------------------------------------------------------------------------------- |
 | OAuth 2.0 | Aplicaciones donde los usuarios necesitan conectarse a sistemas sin exponer credenciales                            |
@@ -14,7 +18,9 @@ Implementación de RBAC o ABAC para control granular.
 
 ## Autorización
 
-Definir la seguridad basado en control y flexiblidad
+Define **qué acciones puede realizar** un usuario una vez autenticado.
+
+_Una vez verificada su identidad, el sistema establece los permisos sobre recursos._
 
 ### RBAC (Role-Based Access Control): para aplicaciones con estructuras claras y permisos predefinidos
 
