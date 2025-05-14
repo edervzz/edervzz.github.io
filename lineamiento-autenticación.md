@@ -6,12 +6,12 @@ Definir un marco de autenticación alineado con estándares modernos y buenas pr
 
 ### Actores y Métodos de Autenticación
 
-| Actor                  | OAuth 2.0                               | JWT   | API Key                                                 |
-| ---------------------- | --------------------------------------- | ----- | ------------------------------------------------------- |
-| Colaboradores internos | ✅ Sí, OpenID Connect                   | ✅ Sí | ❌ No                                                   |
-| Clientes               | ✅ Sí, con PKCE para apps móviles y web | ✅ Sí | ❌ No                                                   |
-| Sistemas internos      | ✅ Sí, Client Credentials Flow          | ✅ Sí | ✅ Sí (Solo para comunicación entre servicios internos) |
-| Sistemas externos      | ✅ Sí, con scopes y restricciones IP    | ✅ Sí | ✅ Sí (Si es necesario para acceso limitado)            |
+| Actor                  | OAuth 2.0                            | JWT   | API Key                                                 |
+| ---------------------- | ------------------------------------ | ----- | ------------------------------------------------------- |
+| Colaboradores internos | ✅ Sí + OpenID Connect               | ✅ Sí | ❌ No                                                   |
+| Clientes               | ✅ Sí + PKCE para apps móviles y web | ✅ Sí | ❌ No                                                   |
+| Sistemas internos      | ✅ Sí + Client Credentials Flow      | ✅ Sí | ✅ Sí (Solo para comunicación entre servicios internos) |
+| Sistemas externos      | ✅ Sí + scopes y restricciones IP    | ✅ Sí | ✅ Sí (Si es necesario para acceso limitado)            |
 
 ## Políticas de Expiración
 
