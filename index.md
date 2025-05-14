@@ -7,11 +7,13 @@ Se describe a nivel general cuales son las capacidades habilitadas dentro de eco
 - Protocolos de integración: REST, GRAPHQL, SOAP, gRPC, WebSockets, Near Real Time, Streaming
 - Estrategia de caché
 
-## 2. Seguridad y Control de Acceso [#](/seguridad-acceso.md)
+## 2. Seguridad y Control de Acceso
 
 - Autenticación: Uso de OAuth 2.0, JWT o API Keys según el caso.
 - Autorización: Implementación de RBAC o ABAC para control granular.
 - Protección de datos sensibles: transporte seguro de datos
+
+[Lineamiento Autenticación](/lineamiento-autenticación.md)
 
 ## 2. Procesos y Orquestación
 
