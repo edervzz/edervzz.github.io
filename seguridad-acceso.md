@@ -10,11 +10,11 @@ Proceso de **verificar la identidad** de un usuario o servicio antes de permitir
 
 _Se asegurda de que la persona o sistema que intenta ingresar es quien dice ser._
 
-| Método    | Uso                                                                                                                 |
-| --------- | ------------------------------------------------------------------------------------------------------------------- |
-| OAuth 2.0 | Aplicaciones donde los usuarios necesitan conectarse a sistemas sin exponer credenciales                            |
-| JWT       | Autenticación de APIs para sesiones sin estado, validación de usuarios rápida                                       |
-| API Keys  | Autorización entre servidores donde no hay intervención directa de usuarios finales. Considerar restricciones de IP |
+| Método    | Uso                                                                                                                  |
+| --------- | -------------------------------------------------------------------------------------------------------------------- |
+| OAuth 2.0 | Aplicaciones donde los usuarios necesitan conectarse a sistemas sin exponer credenciales                             |
+| JWT       | Autenticación de APIs para sesiones sin estado, validación de usuarios rápida                                        |
+| API Keys  | Autorización entre servidores donde no hay intervención directa de usuarios finales. Considerar restricciones de IP. |
 
 ## Autorización
 
