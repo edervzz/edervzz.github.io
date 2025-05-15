@@ -39,3 +39,39 @@ Definir un marco de autenticación alineado con estándares modernos y buenas pr
 3. **Monitoreo y alertas** para detectar uso indebido de credenciales.
 4. **Integración con herramientas de auditoría** (ej. AWS CloudTrail, Datadog).
 5. **Comunicación a equipos** sobre cambios en autenticación y políticas de expiración.
+
+## Casos de Uso
+
+### Colaboradores internos, OAuth 2.0 + OpenID Connect
+
+```
+Un gerente de OS necesita acceder a herramientas del banco como es el sistema de gestión de clientes y el dashboard de métricas de ventas.
+```
+
+```
+Un desarrollador interno necesita acceso a los ambientes de desarrollo y pruebas en GCP/AWS para desplegar nuevos cambios en los servicios.
+```
+
+✅ Con OpenID Connect realizamos una autenticación a través de un proveedor de identidad, de esta forma aseguramos que el usuario es quien dice ser, asegurando que solo colaboradores autorizados accedan a información sensible.
+
+✅ Los colaboradores pueden ingresar a múltiples aplicaciones sin tener que ingresar repetidamente sus credenciales o generar tokens manuales, reduciendo el riesgo de exposición de credenciales.
+
+✅ A través de roles y permisos adecuados podemos asignar aquellos que este acorde al usuario. Dando acceso a las aplicaciones y ambientes pertinentes
+
+---
+
+### Clientes, OAuth 2.0 + PKCE
+
+```
+Un cliente utiliza la banca móvil para consultar su saldo y realizar transferencias bancarias sin necesidad de ingresar sus credenciales cada que se accede las multiples operaciones.
+```
+
+```
+Un usuario quien acaba de abrir su cuenta Compartamos desea vincular su dispositivo para realizar sus operaciones en línea.
+```
+
+✅ PKCE evita el robo de códigos de autorización en aplicaciones móviles o SPA's. PKCE permite a los usuarios autenticarse dentro de las Apps sin depender de redirecciones a enlaces externos.
+
+✅ La App no necesita resguardar la credenciales ya que el proceso de autenticación usa códigos dinámicos.
+
+✅ Al minimizar el uso de acceso con credenciales también se elimina la exposición de las mismas.

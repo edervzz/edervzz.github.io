@@ -2,12 +2,12 @@
 
 Se describe a nivel general cuales son las capacidades habilitadas dentro de ecosistema de integración de Compartamos Banco.
 
-## 1. Conectividad y Comunicación [#](/conectividad-comunicación.md)
+## 1. Conectividad y Comunicación [▶](/conectividad-comunicación.md)
 
 - Protocolos de integración: REST, GRAPHQL, SOAP, gRPC, WebSockets, Near Real Time, Streaming
 - Estrategia de caché
 
-## 2. Seguridad y Control de Acceso
+## 2. Seguridad y Control de Acceso [▶](/seguridad-acceso.md)
 
 - Autenticación: Uso de OAuth 2.0, JWT o API Keys según el caso.
 - Autorización: Implementación de RBAC o ABAC para control granular.
