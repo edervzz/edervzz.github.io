@@ -52,11 +52,11 @@ Un gerente de OS necesita acceder a herramientas del banco como es el sistema de
 Un desarrollador interno necesita acceso a los ambientes de desarrollo y pruebas en GCP/AWS para desplegar nuevos cambios en los servicios.
 ```
 
-✅ Con OpenID Connect realizamos una autenticación a través de un proveedor de identidad, de esta forma aseguramos que el usuario es quien dice ser, asegurando que solo colaboradores autorizados accedan a información sensible.
+✔ Con OpenID Connect realizamos una autenticación a través de un proveedor de identidad, de esta forma aseguramos que el usuario es quien dice ser, asegurando que solo colaboradores autorizados accedan a información sensible.
 
-✅ Los colaboradores pueden ingresar a múltiples aplicaciones sin tener que ingresar repetidamente sus credenciales o generar tokens manuales, reduciendo el riesgo de exposición de credenciales.
+✔ Los colaboradores pueden ingresar a múltiples aplicaciones sin tener que ingresar repetidamente sus credenciales o generar tokens manuales, reduciendo el riesgo de exposición de credenciales.
 
-✅ A través de roles y permisos adecuados podemos asignar aquellos que este acorde al usuario. Dando acceso a las aplicaciones y ambientes pertinentes
+✔ A través de roles y permisos adecuados podemos asignar aquellos que este acorde al usuario. Dando acceso a las aplicaciones y ambientes pertinentes
 
 ---
 
@@ -70,8 +70,8 @@ Un cliente utiliza la banca móvil para consultar su saldo y realizar transferen
 Un usuario quien acaba de abrir su cuenta Compartamos desea vincular su dispositivo para realizar sus operaciones en línea.
 ```
 
-✅ PKCE evita el robo de códigos de autorización en aplicaciones móviles o SPA's. PKCE permite a los usuarios autenticarse dentro de las Apps sin depender de redirecciones a enlaces externos.
+✔ PKCE evita el robo de códigos de autorización en aplicaciones móviles o SPA's. PKCE permite a los usuarios autenticarse dentro de las Apps sin depender de redirecciones a enlaces externos.
 
-✅ La App no necesita resguardar la credenciales ya que el proceso de autenticación usa códigos dinámicos.
+✔ La App no necesita resguardar la credenciales ya que el proceso de autenticación usa códigos dinámicos.
 
-✅ Al minimizar el uso de acceso con credenciales también se elimina la exposición de las mismas.
+✔ Al minimizar el uso de acceso con credenciales también se elimina la exposición de las mismas.
