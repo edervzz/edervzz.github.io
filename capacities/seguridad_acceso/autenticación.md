@@ -1,10 +1,22 @@
-# Propuesta de Lineamientos de Autenticación
+2.  Seguridad y Control de Acceso [↩](/index.md)
+
+# Lineamientos de Autenticación
+
+**Autenticación**: _Proceso de **verificar la identidad** de un usuario, aplicación o dispositivo antes de permitirle acceder a un sistema o servicio, asegurando que la entidad que intenta ingresar es quien dice ser._
 
 ## Objetivo
 
 Definir un marco de autenticación alineado con estándares modernos y buenas prácticas, garantizando seguridad y la escalabilidad en el acceso para **colaboradores, clientes, sistemas internos y sistemas externos**.
 
-### Actores y Métodos de Autenticación
+### Métodos de Autenticación
+
+| Método    | Uso                                                                                                                  |
+| --------- | -------------------------------------------------------------------------------------------------------------------- |
+| OAuth 2.0 | Aplicaciones donde los usuarios necesitan conectarse a sistemas sin exponer credenciales                             |
+| JWT       | Autenticación de APIs para sesiones sin estado, validación de usuarios rápida                                        |
+| API Keys  | Autorización entre servidores donde no hay intervención directa de usuarios finales. Considerar restricciones de IP. |
+
+### Actores vs Métodos de Autenticación
 
 | Actor                  | OAuth 2.0                            | JWT   | API Key                                                 |
 | ---------------------- | ------------------------------------ | ----- | ------------------------------------------------------- |
@@ -14,6 +26,8 @@ Definir un marco de autenticación alineado con estándares modernos y buenas pr
 | Sistemas externos      | ✅ Sí + scopes y restricciones IP    | ✅ Sí | ✅ Sí (Si es necesario para acceso limitado)            |
 
 ## Políticas de Expiración
+
+Defincir los tiempos de expiración estandar de tokens, según sea el usuario: **colaboradores, clientes, sistemas internos y sistemas externos**.
 
 ### Tokens de Acceso
 
@@ -32,7 +46,7 @@ Definir un marco de autenticación alineado con estándares modernos y buenas pr
 - **Duración máxima recomendada:** **90 días**, con monitoreo y rotación periódica.
 - **Restricciones:** Uso solo para **sistemas internos y externos**, nunca para autenticación de usuarios.
 
-## Estrategia de Implementación
+### Estrategia de Implementación
 
 1. **Validación con el equipo de seguridad** para ajustar expiraciones y rotaciones.
 2. **Pruebas de seguridad y estrés** en autenticación bajo carga alta.
@@ -42,7 +56,9 @@ Definir un marco de autenticación alineado con estándares modernos y buenas pr
 
 ## Casos de Uso
 
-### Colaboradores internos, OAuth 2.0 + OpenID Connect
+A continuación se describen ejemplos de la aplicación de métodos de autenticación a cada actor.
+
+### Colaboradores internos. OAuth 2.0 + OpenID Connect
 
 ```
 Un gerente de OS necesita acceder a herramientas del banco como es el sistema de gestión de clientes y el dashboard de métricas de ventas.
@@ -60,7 +76,7 @@ Un desarrollador interno necesita acceso a los ambientes de desarrollo y pruebas
 
 ---
 
-### Clientes, OAuth 2.0 + PKCE
+### Clientes. OAuth 2.0 + PKCE
 
 ```
 Un cliente utiliza la banca móvil para consultar su saldo y realizar transferencias bancarias sin necesidad de ingresar sus credenciales cada que se accede las multiples operaciones.
