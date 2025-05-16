@@ -1,4 +1,4 @@
-1. Conectividad y Comunicación [↩](/index.md)
+1. Conectividad y Comunicación [↩](../../index.md)
 
 # Protocolos de integración
 

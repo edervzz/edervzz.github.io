@@ -5,7 +5,7 @@ Se describe a nivel general cuales son las capacidades habilitadas dentro de eco
 ## 1. Conectividad y Comunicación
 
 - [Protocolos de integración](/capacities/conectividad_comunicacion/protocolos.md) : REST, GRAPHQL, SOAP, gRPC, WebSockets, Near Real Time, Streaming
-- Estrategia de caché
+- [Estrategia de caché](/capacities/conectividad_comunicacion/cache.md)
 
 ## 2. Seguridad y Control de Acceso
 
@@ -24,10 +24,10 @@ Se describe a nivel general cuales son las capacidades habilitadas dentro de eco
 - Compatibilidad de esquemas: logs, payloads, errores, catálogos
 - Conversión y normalización: agregación, transformación
 
-## 4. Monitoreo y Observabilidad [#](/monitoreo-observabilidad.md)
+## 4. Monitoreo y Observabilidad
 
-- Logs y trazabilidad: eventos críticos
-- Alertas y métricas: detección de anomalías
+- [Logs y trazabilidad](/capacities/monitore_observabilidad/logs_trazabilidad.md): eventos críticos
+- [Alertas y métricas](/capacities/monitore_observabilidad/alertas_metricas.md): detección de anomalías
 - Auditoría de transacciones: Identificadores de correlación entre sistemas
 
 ## 6. Operación y Mantenimiento

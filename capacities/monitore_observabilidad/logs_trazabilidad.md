@@ -1,8 +1,12 @@
-# 4. Monitoreo y Observabilidad
+4. Monitoreo y Observabilidad [↩](../../index.md)
 
-## Logs y trazabilidad
+# Logs y trazabilidad
 
-### Eventos críticos
+**Logs**: Registro de eventos generados por aplicaciones o sistemas permitiendo el diagnostico de errores y comportamientos del software.
+
+**Trazabilidad**: Capacidad de seguir el recorrido de una solicitud o proceso a través de uno o varios servicios, ayudando a identificar cuellos de botella y mejora del rendimiento.
+
+## Eventos críticos
 
 Capturar las los eventos esenciales que impactan la operación e integración.
 
