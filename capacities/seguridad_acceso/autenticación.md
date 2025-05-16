@@ -91,3 +91,39 @@ Un usuario quien acaba de abrir su cuenta Compartamos desea vincular su disposit
 ✔ La App no necesita resguardar la credenciales ya que el proceso de autenticación usa códigos dinámicos.
 
 ✔ Al minimizar el uso de acceso con credenciales también se elimina la exposición de las mismas.
+
+---
+
+### Sistemas internos. OAuth 2.0 + Client Credential Flow
+
+```
+Un sistema de procesamiento de pagos necesita consultar el servicio de consulta de cuentas bancarias para validar la existencia de la cuenta y su estado antes de procesar una transacción.
+```
+
+```
+Los sistemas de auditoría interna acceden periodicamente a los logs dentro del core bancario para la generación de reportes.
+```
+
+✔ Dado que se trata de una comunicación entre sistemas, Client Credential Flow permite el intercambio seguro sin la participación de un usuario.
+
+✔ Los servicios puede solicitar tokens según se necesiten sin comprometer la seguridad o fricción con usuarios.
+
+✔ En caso de requerir tratar con datos sensibles, podemos definir scopes para los servicios autorizados.
+
+---
+
+### Sistemas internos. OAuth 2.0 + Client Credential Flow + Scopes + Restricciones IP
+
+```
+Un proveedor de telefonía requiere conectarse a una API de core para generar cobros a clientes por el uso de servicios.
+```
+
+```
+Un servicio de detección de fraudes solicita acceso a datos bancarios limitados para evaluar patrones sospechosos en las transacciones.
+```
+
+✔ El uso de scopes puede limitar a los sistemas externos a consultas y operaciones especificas.
+
+✔ Solo solicitudes desde direcciones IP verificadas pueden acceder a la API, reduciendo riesgos de ataques.
+
+✔ Al usar Client Credencia Flow se garantiza la interacción entre sistemas sin necesidad de un usuario.
