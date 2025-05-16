@@ -1,4 +1,4 @@
-[1. Conectividad y Comunicación](../../index.md) / Protocolos de integración
+[Lineamientos de Integración](../../index.md) / [1. Conectividad y Comunicación](../../index.md#1-conectividad-y-comunicación) / Protocolos de integración
 
 # Protocolos de integración
 

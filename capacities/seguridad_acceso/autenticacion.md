@@ -1,4 +1,4 @@
-[2. Seguridad y Control de Acceso](../../index.md) / Lineamientos de Autenticación
+[Lineamientos de Integración](../../index.md) / [2. Seguridad y Control de Acceso](../../index.md#2-seguridad-y-control-de-acceso) / Lineamientos de Autenticación
 
 # Lineamientos de Autenticación
 
@@ -64,7 +64,7 @@ A continuación se describen ejemplos de la aplicación de métodos de autentica
 
 - Un desarrollador interno necesita acceso a los ambientes de desarrollo y pruebas en GCP/AWS para desplegar nuevos cambios en los servicios.
 
-✔ Con OpenID Connect realizamos una autenticación a través de un proveedor de identidad, de esta forma aseguramos que el usuario es quien dice ser, asegurando que solo colaboradores autorizados accedan a información sensible.
+✔ Con OpenID Connect realizamos una autenticación a través de un proveedor de identidad, de esta forma aseguramos que el usuario es quien dice ser, solo colaboradores autorizados accedan a información sensible.
 
 ✔ Los colaboradores pueden ingresar a múltiples aplicaciones sin tener que ingresar repetidamente sus credenciales o generar tokens manuales, reduciendo el riesgo de exposición de credenciales.
 

@@ -9,22 +9,22 @@ Se describe a nivel general cuales son las capacidades habilitadas dentro de eco
 
 ## 2. Seguridad y Control de Acceso
 
-- [Autenticación](/capacities/seguridad_acceso/autenticación.md): Uso de OAuth 2.0, JWT o API Keys según el caso.
+- [Autenticación](/capacities/seguridad_acceso/autenticacion.md): Uso de OAuth 2.0, JWT o API Keys según el caso.
 - Autorización: Implementación de RBAC o ABAC para control granular.
 - Protección de datos sensibles: transporte seguro de datos
 
-## 2. Procesos y Orquestación
+## 3. Procesos y Orquestación
 
 - Flujo de datos: Coreografía
 - Modelo de comunicación: ASYNC / SYNC
 - Gestión de errores: Código de error, Sincronización de estados
 
-## 3. Modelos de Datos y Transformaciones
+## 4. Modelos de Datos y Transformaciones
 
 - Compatibilidad de esquemas: logs, payloads, errores, catálogos
 - Conversión y normalización: agregación, transformación
 
-## 4. Monitoreo y Observabilidad
+## 5. Monitoreo y Observabilidad
 
 - [Logs y trazabilidad](/capacities/monitore_observabilidad/logs_trazabilidad.md): eventos críticos
 - [Alertas y métricas](/capacities/monitore_observabilidad/alertas_metricas.md): detección de anomalías
