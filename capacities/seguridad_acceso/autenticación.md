@@ -18,12 +18,12 @@ Definir un marco de autenticación alineado con estándares modernos y buenas pr
 
 ### Actores vs Métodos de Autenticación
 
-| Actor                  | OAuth 2.0                            | JWT   | API Key                                                 |
-| ---------------------- | ------------------------------------ | ----- | ------------------------------------------------------- |
-| Colaboradores internos | ✅ Sí + OpenID Connect               | ✅ Sí | ❌ No                                                   |
-| Clientes               | ✅ Sí + PKCE para apps móviles y web | ✅ Sí | ❌ No                                                   |
-| Sistemas internos      | ✅ Sí + Client Credentials Flow      | ✅ Sí | ✅ Sí (Solo para comunicación entre servicios internos) |
-| Sistemas externos      | ✅ Sí + scopes y restricciones IP    | ✅ Sí | ✅ Sí (Si es necesario para acceso limitado)            |
+| Actor                  | OAuth 2.0                           | JWT  | API Key                                                |
+| ---------------------- | ----------------------------------- | ---- | ------------------------------------------------------ |
+| Colaboradores internos | ✔ Sí + OpenID Connect               | ✔ Sí | ❌ No                                                  |
+| Clientes               | ✔ Sí + PKCE para apps móviles y web | ✔ Sí | ❌ No                                                  |
+| Sistemas internos      | ✔ Sí + Client Credentials Flow      | ✔ Sí | ✔ Sí (Solo para comunicación entre servicios internos) |
+| Sistemas externos      | ✔ Sí + scopes y restricciones IP    | ✔ Sí | ✔ Sí (Si es necesario para acceso limitado)            |
 
 ## Políticas de Expiración
 
@@ -60,13 +60,9 @@ A continuación se describen ejemplos de la aplicación de métodos de autentica
 
 ### Colaboradores internos. OAuth 2.0 + OpenID Connect
 
-```
-Un gerente de OS necesita acceder a herramientas del banco como es el sistema de gestión de clientes y el dashboard de métricas de ventas.
-```
+- Un gerente de OS necesita acceder a herramientas del banco como es el sistema de gestión de clientes y el dashboard de métricas de ventas.
 
-```
-Un desarrollador interno necesita acceso a los ambientes de desarrollo y pruebas en GCP/AWS para desplegar nuevos cambios en los servicios.
-```
+- Un desarrollador interno necesita acceso a los ambientes de desarrollo y pruebas en GCP/AWS para desplegar nuevos cambios en los servicios.
 
 ✔ Con OpenID Connect realizamos una autenticación a través de un proveedor de identidad, de esta forma aseguramos que el usuario es quien dice ser, asegurando que solo colaboradores autorizados accedan a información sensible.
 
@@ -78,13 +74,9 @@ Un desarrollador interno necesita acceso a los ambientes de desarrollo y pruebas
 
 ### Clientes. OAuth 2.0 + PKCE
 
-```
-Un cliente utiliza la banca móvil para consultar su saldo y realizar transferencias bancarias sin necesidad de ingresar sus credenciales cada que se accede las multiples operaciones.
-```
+- Un cliente utiliza la banca móvil para consultar su saldo y realizar transferencias bancarias sin necesidad de ingresar sus credenciales cada que se accede las multiples operaciones.
 
-```
-Un usuario quien acaba de abrir su cuenta Compartamos desea vincular su dispositivo para realizar sus operaciones en línea.
-```
+- Un usuario quien acaba de abrir su cuenta Compartamos desea vincular su dispositivo para realizar sus operaciones en línea.
 
 ✔ PKCE evita el robo de códigos de autorización en aplicaciones móviles o SPA's. PKCE permite a los usuarios autenticarse dentro de las Apps sin depender de redirecciones a enlaces externos.
 
@@ -96,13 +88,9 @@ Un usuario quien acaba de abrir su cuenta Compartamos desea vincular su disposit
 
 ### Sistemas internos. OAuth 2.0 + Client Credential Flow
 
-```
-Un sistema de procesamiento de pagos necesita consultar el servicio de consulta de cuentas bancarias para validar la existencia de la cuenta y su estado antes de procesar una transacción.
-```
+- Un sistema de procesamiento de pagos necesita consultar el servicio de consulta de cuentas bancarias para validar la existencia de la cuenta y su estado antes de procesar una transacción.
 
-```
-Los sistemas de auditoría interna acceden periodicamente a los logs dentro del core bancario para la generación de reportes.
-```
+- Los sistemas de auditoría interna acceden periodicamente a los logs dentro del core bancario para la generación de reportes.
 
 ✔ Dado que se trata de una comunicación entre sistemas, Client Credential Flow permite el intercambio seguro sin la participación de un usuario.
 
@@ -114,16 +102,16 @@ Los sistemas de auditoría interna acceden periodicamente a los logs dentro del 
 
 ### Sistemas internos. OAuth 2.0 + Client Credential Flow + Scopes + Restricciones IP
 
-```
-Un proveedor de telefonía requiere conectarse a una API de core para generar cobros a clientes por el uso de servicios.
-```
+- Un proveedor de telefonía requiere conectarse a una API de core para generar cobros a clientes por el uso de servicios.
 
-```
-Un servicio de detección de fraudes solicita acceso a datos bancarios limitados para evaluar patrones sospechosos en las transacciones.
-```
+- Un servicio de detección de fraudes solicita acceso a datos bancarios limitados para evaluar patrones sospechosos en las transacciones.
 
 ✔ El uso de scopes puede limitar a los sistemas externos a consultas y operaciones especificas.
 
 ✔ Solo solicitudes desde direcciones IP verificadas pueden acceder a la API, reduciendo riesgos de ataques.
 
 ✔ Al usar Client Credencia Flow se garantiza la interacción entre sistemas sin necesidad de un usuario.
+
+```
+
+```
