@@ -1,4 +1,4 @@
-[Lineamientos de Integración](../../index.md) / [1. Conectividad y Comunicación](../../index.md#1-conectividad-y-comunicación) / Incorporación de caché
+[Lineamientos de Integración](../../index.md#lineamientos-de-integración) / [1. Conectividad y Comunicación](../../index.md#1-conectividad-y-comunicación) / Incorporación de caché
 
 # Incorporación de caché
 

@@ -1,4 +1,4 @@
-[Lineamientos de Integración](../../index.md) / [2. Seguridad y Control de Acceso](../../index.md#2-seguridad-y-control-de-acceso) / Lineamientos de Autenticación
+[Lineamientos de Integración](../../index.md#lineamientos-de-integración) / [2. Seguridad y Control de Acceso](../../index.md#2-seguridad-y-control-de-acceso) / Lineamientos de Autenticación
 
 # Lineamientos de Autenticación
 

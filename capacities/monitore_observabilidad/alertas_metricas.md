@@ -1,4 +1,4 @@
-[Lineamientos de Integración](../../index.md) / [5. Monitoreo y Observabilidad](../../index.md#5-monitoreo-y-observabilidad) / Alertas y metricas
+[Lineamientos de Integración](../../index.md#lineamientos-de-integración) / [5. Monitoreo y Observabilidad](../../index.md#5-monitoreo-y-observabilidad) / Alertas y metricas
 
 # Alertas y metricas
 
