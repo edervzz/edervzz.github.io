@@ -1,4 +1,4 @@
-2.  Seguridad y Control de Acceso [↩](../../index.md)
+[2. Seguridad y Control de Acceso](../../index.md) / Lineamientos de Autenticación
 
 # Lineamientos de Autenticación
 

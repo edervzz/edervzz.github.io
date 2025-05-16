@@ -1,4 +1,4 @@
-4. Monitoreo y Observabilidad [↩](../../index.md)
+[4. Monitoreo y Observabilidad](../../index.md) / Logs y trazabilidad
 
 # Logs y trazabilidad
 

@@ -1,6 +1,6 @@
-1. Conectividad y Comunicación [↩](../../index.md)
+[1. Conectividad y Comunicación](../../index.md) / Incorporación de caché
 
-# Incorporación de caché.
+# Incorporación de caché
 
 _Reducir la dependencia a consultas repetitivas_
 
