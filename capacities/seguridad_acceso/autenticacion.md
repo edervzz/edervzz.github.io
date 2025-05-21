@@ -12,8 +12,8 @@ Definir un marco de autenticación alineado con estándares modernos y buenas pr
 
 | Método    | Uso                                                                                                                  |
 | --------- | -------------------------------------------------------------------------------------------------------------------- |
-| OAuth 2.0 | Aplicaciones donde los usuarios necesitan conectarse a sistemas sin exponer credenciales                             |
-| JWT       | Autenticación de APIs para sesiones sin estado, validación de usuarios rápida                                        |
+| OAuth 2.0 | Aplicaciones donde los usuarios necesitan conectarse a sistemas sin exponer credenciales.                            |
+| JWT       | Autenticación de APIs para sesiones sin estado, validación de usuarios rápida.                                       |
 | API Keys  | Autorización entre servidores donde no hay intervención directa de usuarios finales. Considerar restricciones de IP. |
 
 ### Actores vs Métodos de Autenticación

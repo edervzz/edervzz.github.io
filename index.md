@@ -10,7 +10,7 @@ Se describe a nivel general cuales son las capacidades habilitadas dentro de eco
 ## 2. Seguridad y Control de Acceso
 
 - [Autenticación](/capacities/seguridad_acceso/autenticacion.md): Uso de OAuth 2.0, JWT o API Keys según el caso.
-- Autorización: Implementación de RBAC o ABAC para control granular.
+- [Autorización](/capacities/seguridad_acceso/autorizacion.md) : Implementación de RBAC o ABAC para control granular.
 - Protección de datos sensibles: transporte seguro de datos
 
 ## 3. Procesos y Orquestación
