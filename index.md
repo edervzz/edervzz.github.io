@@ -4,13 +4,13 @@ Se describe a nivel general cuales son las capacidades habilitadas dentro de eco
 
 ## 1. Conectividad y Comunicación
 
-- [Protocolos de integración](/capacities/conectividad_comunicacion/protocolos.md) : REST, GRAPHQL, SOAP, gRPC, WebSockets, Near Real Time, Streaming
-- [Estrategia de caché](/capacities/conectividad_comunicacion/cache.md)
+- [Protocolos de integración](/capacidades/conectividad_comunicacion/protocolos.md) : REST, GRAPHQL, SOAP, gRPC, WebSockets, Near Real Time, Streaming
+- [Estrategia de caché](/capacidades/conectividad_comunicacion/cache.md): Cadencia, Consistencia.
 
 ## 2. Seguridad y Control de Acceso
 
-- [Autenticación](/capacities/seguridad_acceso/autenticacion.md): Uso de OAuth 2.0, JWT o API Keys según el caso.
-- [Autorización](/capacities/seguridad_acceso/autorizacion.md) : Implementación de RBAC o ABAC para control granular.
+- [Autenticación](/capacidades/seguridad_acceso/autenticacion.md): Uso de OAuth 2.0, JWT o API Keys según el caso.
+- [Autorización](/capacidades/seguridad_acceso/autorizacion.md) : Implementación de RBAC o ABAC para control granular.
 - Protección de datos sensibles: transporte seguro de datos
 
 ## 3. Procesos y Orquestación
@@ -26,8 +26,8 @@ Se describe a nivel general cuales son las capacidades habilitadas dentro de eco
 
 ## 5. Monitoreo y Observabilidad
 
-- [Logs y trazabilidad](/capacities/monitore_observabilidad/logs_trazabilidad.md): eventos críticos
-- [Alertas y métricas](/capacities/monitore_observabilidad/alertas_metricas.md): detección de anomalías
+- [Logs y trazabilidad](/capacidades/monitore_observabilidad/logs_trazabilidad.md): eventos críticos
+- [Alertas y métricas](/capacidades/monitore_observabilidad/alertas_metricas.md): detección de anomalías
 - Auditoría de transacciones: Identificadores de correlación entre sistemas
 
 ## 6. Operación y Mantenimiento

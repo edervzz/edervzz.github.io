@@ -2,6 +2,10 @@
 
 # Protocolos de integración
 
+## Objetivo
+
+Definir el uso adecuado de protocolos de integración según las necesidades del sistema. Considerando factores como tipo de datos, complejidad de consultas, seguridad, escalabilidad y compatibilidad.
+
 ## Selección del protocolo adecuado
 
 | Protocolo  | Uso                                                    |   Formato    | R      |

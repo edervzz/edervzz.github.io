@@ -20,10 +20,10 @@ Definir un marco de autenticación alineado con estándares modernos y buenas pr
 
 | Actor                  | OAuth 2.0                           | JWT  | API Key                                                |
 | ---------------------- | ----------------------------------- | ---- | ------------------------------------------------------ |
-| Colaboradores internos | ✔ Sí + OpenID Connect               | ✔ Sí | ❌ No                                                  |
-| Clientes               | ✔ Sí + PKCE para apps móviles y web | ✔ Sí | ❌ No                                                  |
-| Sistemas internos      | ✔ Sí + Client Credentials Flow      | ✔ Sí | ✔ Sí (Solo para comunicación entre servicios internos) |
-| Sistemas externos      | ✔ Sí + scopes y restricciones IP    | ✔ Sí | ✔ Sí (Si es necesario para acceso limitado)            |
+| Colaboradores internos | ✅Sí + OpenID Connect               | ✅Sí | ❌ No                                                  |
+| Clientes               | ✅Sí + PKCE para apps móviles y web | ✅Sí | ❌ No                                                  |
+| Sistemas internos      | ✅Sí + Client Credentials Flow      | ✅Sí | ✅Sí (Solo para comunicación entre servicios internos) |
+| Sistemas externos      | ✅Sí + scopes y restricciones IP    | ✅Sí | ✅Sí (Si es necesario para acceso limitado)            |
 
 ## Políticas de Expiración
 
@@ -64,11 +64,11 @@ A continuación se describen ejemplos de la aplicación de métodos de autentica
 
 - Un desarrollador interno necesita acceso a los ambientes de desarrollo y pruebas en GCP/AWS para desplegar nuevos cambios en los servicios.
 
-✔ Con OpenID Connect realizamos una autenticación a través de un proveedor de identidad, de esta forma aseguramos que el usuario es quien dice ser, solo colaboradores autorizados accedan a información sensible.
+✅Con OpenID Connect realizamos una autenticación a través de un proveedor de identidad, de esta forma aseguramos que el usuario es quien dice ser, solo colaboradores autorizados accedan a información sensible.
 
-✔ Los colaboradores pueden ingresar a múltiples aplicaciones sin tener que ingresar repetidamente sus credenciales o generar tokens manuales, reduciendo el riesgo de exposición de credenciales.
+✅Los colaboradores pueden ingresar a múltiples aplicaciones sin tener que ingresar repetidamente sus credenciales o generar tokens manuales, reduciendo el riesgo de exposición de credenciales.
 
-✔ A través de roles y permisos adecuados podemos asignar aquellos que este acorde al usuario. Dando acceso a las aplicaciones y ambientes pertinentes
+✅A través de roles y permisos adecuados podemos asignar aquellos que este acorde al usuario. Dando acceso a las aplicaciones y ambientes pertinentes
 
 ---
 
@@ -78,11 +78,11 @@ A continuación se describen ejemplos de la aplicación de métodos de autentica
 
 - Un usuario quien acaba de abrir su cuenta Compartamos desea vincular su dispositivo para realizar sus operaciones en línea.
 
-✔ PKCE evita el robo de códigos de autorización en aplicaciones móviles o SPA's. PKCE permite a los usuarios autenticarse dentro de las Apps sin depender de redirecciones a enlaces externos.
+✅PKCE evita el robo de códigos de autorización en aplicaciones móviles o SPA's. PKCE permite a los usuarios autenticarse dentro de las Apps sin depender de redirecciones a enlaces externos.
 
-✔ La App no necesita resguardar la credenciales ya que el proceso de autenticación usa códigos dinámicos.
+✅La App no necesita resguardar la credenciales ya que el proceso de autenticación usa códigos dinámicos.
 
-✔ Al minimizar el uso de acceso con credenciales también se elimina la exposición de las mismas.
+✅Al minimizar el uso de acceso con credenciales también se elimina la exposición de las mismas.
 
 ---
 
@@ -92,11 +92,11 @@ A continuación se describen ejemplos de la aplicación de métodos de autentica
 
 - Los sistemas de auditoría interna acceden periodicamente a los logs dentro del core bancario para la generación de reportes.
 
-✔ Dado que se trata de una comunicación entre sistemas, Client Credential Flow permite el intercambio seguro sin la participación de un usuario.
+✅Dado que se trata de una comunicación entre sistemas, Client Credential Flow permite el intercambio seguro sin la participación de un usuario.
 
-✔ Los servicios puede solicitar tokens según se necesiten sin comprometer la seguridad o fricción con usuarios.
+✅Los servicios puede solicitar tokens según se necesiten sin comprometer la seguridad o fricción con usuarios.
 
-✔ En caso de requerir tratar con datos sensibles, podemos definir scopes para los servicios autorizados.
+✅En caso de requerir tratar con datos sensibles, podemos definir scopes para los servicios autorizados.
 
 ---
 
@@ -106,11 +106,11 @@ A continuación se describen ejemplos de la aplicación de métodos de autentica
 
 - Un servicio de detección de fraudes solicita acceso a datos bancarios limitados para evaluar patrones sospechosos en las transacciones.
 
-✔ El uso de scopes puede limitar a los sistemas externos a consultas y operaciones especificas.
+✅El uso de scopes puede limitar a los sistemas externos a consultas y operaciones especificas.
 
-✔ Solo solicitudes desde direcciones IP verificadas pueden acceder a la API, reduciendo riesgos de ataques.
+✅Solo solicitudes desde direcciones IP verificadas pueden acceder a la API, reduciendo riesgos de ataques.
 
-✔ Al usar Client Credencia Flow se garantiza la interacción entre sistemas sin necesidad de un usuario.
+✅Al usar Client Credencia Flow se garantiza la interacción entre sistemas sin necesidad de un usuario.
 
 ```
 
